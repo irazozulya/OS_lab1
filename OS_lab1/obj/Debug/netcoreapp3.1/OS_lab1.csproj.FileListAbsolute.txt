@@ -1,0 +1,13 @@
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/bin/Debug/netcoreapp3.1/OS_lab1.deps.json
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/bin/Debug/netcoreapp3.1/OS_lab1.runtimeconfig.json
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/bin/Debug/netcoreapp3.1/OS_lab1.runtimeconfig.dev.json
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/bin/Debug/netcoreapp3.1/OS_lab1.dll
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/bin/Debug/netcoreapp3.1/OS_lab1.pdb
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/bin/Debug/netcoreapp3.1/memory.dll
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/bin/Debug/netcoreapp3.1/memory.pdb
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/obj/Debug/netcoreapp3.1/OS_lab1.csprojAssemblyReference.cache
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/obj/Debug/netcoreapp3.1/OS_lab1.AssemblyInfoInputs.cache
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/obj/Debug/netcoreapp3.1/OS_lab1.AssemblyInfo.cs
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/obj/Debug/netcoreapp3.1/OS_lab1.csproj.CopyComplete
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/obj/Debug/netcoreapp3.1/OS_lab1.dll
+/Users/irazozulya/Projects/OS_lab1/OS_lab1/obj/Debug/netcoreapp3.1/OS_lab1.pdb

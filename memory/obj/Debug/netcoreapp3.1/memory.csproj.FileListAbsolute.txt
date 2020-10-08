@@ -1,0 +1,8 @@
+/Users/irazozulya/Projects/OS_lab1/memory/bin/Debug/netcoreapp3.1/memory.deps.json
+/Users/irazozulya/Projects/OS_lab1/memory/bin/Debug/netcoreapp3.1/memory.dll
+/Users/irazozulya/Projects/OS_lab1/memory/bin/Debug/netcoreapp3.1/memory.pdb
+/Users/irazozulya/Projects/OS_lab1/memory/obj/Debug/netcoreapp3.1/memory.csprojAssemblyReference.cache
+/Users/irazozulya/Projects/OS_lab1/memory/obj/Debug/netcoreapp3.1/memory.AssemblyInfoInputs.cache
+/Users/irazozulya/Projects/OS_lab1/memory/obj/Debug/netcoreapp3.1/memory.AssemblyInfo.cs
+/Users/irazozulya/Projects/OS_lab1/memory/obj/Debug/netcoreapp3.1/memory.dll
+/Users/irazozulya/Projects/OS_lab1/memory/obj/Debug/netcoreapp3.1/memory.pdb

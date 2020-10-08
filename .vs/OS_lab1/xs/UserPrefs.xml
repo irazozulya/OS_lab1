@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{79525B79-F7E0-4B20-94CE-D8BE64292848}|Default">
+  <MonoDevelop.Ide.ItemProperties.OS__lab1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OS_lab1/Program.cs">
+    <Files>
+      <File FileName="OS_lab1/Program.cs" Line="44" Column="17" />
+      <File FileName="memory/Class1.cs" Line="187" Column="59" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/irazozulya/Projects/OS_lab1/memory/Class1.cs" relfile="memory/Class1.cs" line="47" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
