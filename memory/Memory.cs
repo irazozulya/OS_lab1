@@ -31,7 +31,7 @@ namespace memory
                         {
                             int next = curr + 4 + size;
                             memArray[next] = memArray[next + 1] = memArray[next + 2] = memArray[next + 3] = Convert.ToChar(0);
-                            int temp = (int)memArray[curr + 3] - size - 4;
+                            int temp = memArray[curr + 3] - size - 4;
                             memArray[next + 3] = (char)temp;
                         } else
                         {

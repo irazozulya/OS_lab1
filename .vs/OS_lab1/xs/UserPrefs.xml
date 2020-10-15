@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.OS__lab1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="memory/Memory.cs">
     <Files>
-      <File FileName="OS_lab1/Program.cs" Line="46" Column="14" />
-      <File FileName="memory/Memory.cs" Line="1" Column="1" />
+      <File FileName="memory/Memory.cs" Line="35" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

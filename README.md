@@ -18,15 +18,20 @@
  ## Usage
 
  The program is used for working with the memory.
+ 
+ 
+ ## Examples
+ 
+ 
 
 
  ## Functions
  
- MemAlloc(int size) is used for memory allocation.
- MemRealloc(char* addr, int size) is used for memory reallocation.
- CheckMerge() is used for checking if there is free cells next to each other and merging them.
- MemFree(char* addr) is used for clearing the heading.
- ShowMem() is used for outputting the memory array.
+ MemAlloc(int size) is used for memory allocation.<br />
+ MemRealloc(char* addr, int size) is used for memory reallocation.<br />
+ CheckMerge() is used for checking if there is free cells next to each other and merging them.<br />
+ MemFree(char* addr) is used for clearing the heading.<br />
+ ShowMem() is used for outputting the memory array.<br />
 
 
  ## Version
