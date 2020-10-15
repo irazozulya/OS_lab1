@@ -22,13 +22,11 @@
 
  ## Functions
  
- GetSize (int curr) is used for getting size from the heading.
- SetSize(int curr, int size) is used for setting size into the heading
- MemAlloc(int size) is used for memory allocation
- MemRealloc(char* addr, int size) is used for memory reallocation
- CheckMerge() is used for checking if there is free cells next to each other and merging them
- MemFree(char* addr) is used for clearing the heading
- ShowMem() is used for outputting the memory array
+ MemAlloc(int size) is used for memory allocation.
+ MemRealloc(char* addr, int size) is used for memory reallocation.
+ CheckMerge() is used for checking if there is free cells next to each other and merging them.
+ MemFree(char* addr) is used for clearing the heading.
+ ShowMem() is used for outputting the memory array.
 
 
  ## Version
