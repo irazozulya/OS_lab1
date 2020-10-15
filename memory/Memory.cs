@@ -9,40 +9,9 @@ namespace memory
         public Memory()
         {
             memArray = new char[100];
-            memArray[0] = memArray[1] = Convert.ToChar(0);
-            memArray[2] = Convert.ToChar(9);
-            memArray[3] = Convert.ToChar(6);
+            memArray[0] = memArray[1] = memArray[2] = Convert.ToChar(0);
+            memArray[3] = Convert.ToChar(96);
 
-        }
-
-        protected int GetSize (int curr)// getting size from the heading
-        {
-            int size;
-            if (memArray[curr + 1] == '\0')
-            {
-                if(memArray[curr + 2] == '\0')
-                {
-                    size = memArray[curr + 3];
-                } else
-                {
-                    size = memArray[curr + 2] * 10 + memArray[curr + 3];
-                }
-            } else
-            {
-                size = memArray[curr + 1] * 100 + memArray[curr + 2] * 10 + memArray[curr + 3];
-            }
-
-            return size;
-        }
-
-        protected void SetSize(int curr, int size)// setting size into the heading
-        {
-            string s = Convert.ToString(size);
-            int len = s.Length;
-            for (int i = 0; i < len; i++)
-            {
-                memArray[curr + 3 - i] = Convert.ToChar(Convert.ToUInt32(char.GetNumericValue(s, len - 1 - i)));
-            }
         }
 
         public unsafe char* MemAlloc(int size)//memory allocation
@@ -54,19 +23,23 @@ namespace memory
             {
                 if (memArray[curr] == Convert.ToChar(0))
                 {
-                    if (GetSize(curr) >= size)
+                    if (memArray[curr + 3] >= size)
                     {
                         memArray[curr] = Convert.ToChar(1);
 
-                        if (GetSize(curr) >= size + 5)
+                        if (memArray[curr + 3] >= size + 5)
                         {
                             int next = curr + 4 + size;
                             memArray[next] = memArray[next + 1] = memArray[next + 2] = memArray[next + 3] = Convert.ToChar(0);
-                            SetSize(next, GetSize(curr) - size - 4);
+                            int temp = (int)memArray[curr + 3] - size - 4;
+                            memArray[next + 3] = (char)temp;
+                        } else
+                        {
+                            size = memArray[curr + 3];
                         }
 
                         memArray[curr + 1] = memArray[curr + 2] = memArray[curr + 3] = Convert.ToChar(0);
-                        SetSize(curr, size);
+                        memArray[curr + 3] = (char) size;
                         end = true;
 
                         fixed (char* ret = &memArray[curr + 4])
@@ -75,11 +48,11 @@ namespace memory
                         }
                     } else
                     {
-                        curr += GetSize(curr) + 4;
+                        curr += memArray[curr + 3] + 4;
                     }
                 } else if (memArray[curr] == Convert.ToChar(1))
                 {
-                    curr += GetSize(curr) + 4;
+                    curr += memArray[curr + 3] + 4;
                 }
             }
 
@@ -100,7 +73,7 @@ namespace memory
                     long add = Convert.ToInt64(Convert.ToString((uint)addr));
                     long firstadd = Convert.ToInt64(Convert.ToString((uint)a));
                     int curr = Convert.ToInt32(add - firstadd) / 2 - 4;
-                    int curr_size = GetSize(curr);
+                    int curr_size = memArray[curr + 3];
 
                     if (curr_size != size)
                     {
@@ -142,29 +115,29 @@ namespace memory
             {
                 if (memArray[curr] == Convert.ToChar(0))
                 {
-                    int size = GetSize(curr);
+                    int size = memArray[curr + 3];
                     int next = curr + 4 + size;
                     if (next < memArray.Length)
                     {
                         if (memArray[next] == Convert.ToChar(0))
                         {
-                            int size_next = GetSize(next);
+                            int size_next = memArray[next + 3];
                             memArray[next] = memArray[next + 1] = memArray[next + 2] = memArray[next + 3] = Convert.ToChar(0);
 
-                            SetSize(curr, size + size_next + 4);
+                            memArray[curr + 3] = (char)(size + size_next + 4);
                         }
                         else
                         {
-                            curr += GetSize(curr) + 4;
+                            curr += memArray[curr + 3] + 4;
                         }
                     } else
                     {
-                        curr += GetSize(curr) + 4;
+                        curr += memArray[curr + 3] + 4;
                     }
                 }
                 else if (memArray[curr] == Convert.ToChar(1))
                 {
-                    curr += GetSize(curr) + 4;
+                    curr += memArray[curr + 3] + 4;
                 }
             }
         }
