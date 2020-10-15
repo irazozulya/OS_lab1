@@ -22,7 +22,8 @@
  
  ## Examples
  
- 
+ ![The first picture](https://github.com/irazozulya/OS_lab1/blob/main/1.png)
+ ![The second picture](https://github.com/irazozulya/OS_lab1/blob/main/2.png)
 
 
  ## Functions
